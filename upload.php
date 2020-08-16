@@ -15,7 +15,7 @@ $csv = file_get_contents($file_data);
 $rows = explode(PHP_EOL, $csv);
 $data = [];
 
-foreach (rows as $row) {
+foreach ($rows as $row) {
 
     $data[] = explode($delimiter, $row);
 
@@ -34,12 +34,5 @@ foreach ($data2 as $line) {
 }
 
 }
-
-
-
-
-
-
-
 
 ?>
