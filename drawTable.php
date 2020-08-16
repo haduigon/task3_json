@@ -10,7 +10,7 @@ function drawTable(array $array): void {
     foreach($array as $row){
 
 
-        $html.=""<th width='200px'>$row</th>;
+        $html.="<th width='200px'>$row</th>";
 
     }
 
