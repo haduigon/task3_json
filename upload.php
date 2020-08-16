@@ -4,7 +4,7 @@ $file_data=($_FILES['file']['tmp_name']);
 
 if($_FILES['file']['type']!=='text/csv' || $_FILES['file']['size'] > 100000){
 
-    echo"Input smaller file only txt or csv tyoe";
+    echo"Input smaller file only txt or csv type";
 }
 else {
 
