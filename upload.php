@@ -1,5 +1,7 @@
 <?php
 
+require 'drawTable.php';
+
 $file_data=($_FILES['file']['tmp_name']);
 
 if($_FILES['file']['type']!=='text/csv' || $_FILES['file']['size'] > 100000){
@@ -8,7 +10,7 @@ if($_FILES['file']['type']!=='text/csv' || $_FILES['file']['size'] > 100000){
 }
 else {
 
-    $file_data = ($_FILES['file']['tmp_name'])
+    $file_data = ($_FILES['file']['tmp_name']);
 $delimiter = ',';
 $csv = file_get_contents($file_data);
 
